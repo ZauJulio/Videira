@@ -42,3 +42,12 @@ class Cacho:
 
         return uva
 
+
+if __name__ == "__main__":
+    foo = { 'a':[1,2,3], 'b': {'c': 2} }
+    
+    bar = Cacho(foo)
+    
+    print(bar)
+    print(bar.a)
+    print(bar.a.b.c)
