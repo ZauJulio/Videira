@@ -8,7 +8,7 @@ setup(
   author = 'Zaú Júlio, Anderson Felipe',
   author_email = 'zauhdf@gmail.com, andersonfelipe01@live.com',
   url = 'https://github.com/ZauJulio/Videira',
-  download_url = 'https://github.com/ZauJulio/Videira/releases/tag/v0.0.0.tar.gz',
+  download_url = 'https://github.com/ZauJulio/Videira/releases/tag/videira_v0.0.0.tar.gz',
   keywords = ['class', 'dictToClass', 'dict', 'converting', 'type'],
   classifiers=[
     'Development Status :: 3 - Alpha',
