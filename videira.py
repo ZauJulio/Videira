@@ -2,21 +2,43 @@
 # Author: ZauJulio(zauhdf@gmail.com)
 #
 # Present...
-# 
-# 
+####################################################### 
+#                                                     #
+# \\\\\\\\\\\\\\\\\\\ Jabuticaba //////////////////// #
+#                                                     #
+#######################################################
 
 
-class Mamao:
-    def __init__(self, pitaya):
-        """  """
-        if isinstance(pitaya, dict):
-            self.__dict__ = pitaya
-            for item in pitaya.keys():
-                self.__dict__[item] = self._reconstructor(self.__dict__[item])
+class Cacho:
+    def __init__(self, uva):
+        """ Cacho Classification
 
-    def _reconstructor(self, carambola):
-        """  """
-        if isinstance(carambola, dict):
-            return Mamao(carambola)
+        Parameters
+        ----------
+        uva: dict
 
-        return carambola
+        Returns
+        -------
+        Cacho class with uva keys as attributes
+
+        """
+        if isinstance(uva, dict):
+            self.__dict__ = uva
+            for item in uva.keys():
+                self.__dict__[item] = self.__reconstructor(self.__dict__[item])
+
+    def __reconstructor(self, uva):
+        """
+        Parameters
+        ----------
+        uva: dict or any object
+
+        Returns
+        -------
+        Cacho class if uva is a dict, otherwise return uva object
+        """
+        if isinstance(uva, dict):
+            return Cacho(uva)
+
+        return uva
+
